@@ -1,0 +1,31 @@
+There are also a set of attribute selector that allow you to create rules that apply to elements that have an attribute with a specific value.
+
+Selector 	Meaning 				Example
+EXISTENCE	[]						p[class]
+			Matches a specific 				
+			attribute (whatever
+			its value).
+EQUALITY	[=]						p[class="dog"]
+			Matches a specific
+			attribute with a
+			specific value.
+SPACE		[~=]					p[class~="dog"]
+			Matches a specific
+			attribute whose val
+			appears in a space
+			separated list of
+			words.
+PREFIX		[^=]					p[attr^="d"]
+			Matches a specific
+			attribute whose val
+			begins with a speci
+			fic string.
+SUBSTRING	[*=]					p[attr*="do"]
+			Matches a specific
+			attribute whose val
+			contains a specific
+			substring.
+SUFFIX		[$=]					p[attr$="g"]
+			Matches a specific
+			whose values end with
+			a specific string.
